@@ -18,7 +18,7 @@ function App() {
       details.email === adminUser.email &&
       details.password === adminUser.password
     ) {
-      console.log("Logged In");
+      setError("matched");
       setUser({
         email: details.email,
         password: details.password,
@@ -27,24 +27,10 @@ function App() {
       setError("Details not matched");
     }
   };
-  const logout = () => {
-    setUser({
-      email: "",
-      password: "",
-    });
-  };
+
   return (
     <div className="App">
-      {user.email !== "" ? (
-        <div className="welcome">
-          <h2>
-            Welcome, <span>{user.email}</span>
-          </h2>
-          <button onClick={logout}>Logout</button>
-        </div>
-      ) : (
-        <Login login={loginCheck} error={error} />
-      )}
+      <Login login={loginCheck} error={error} />
     </div>
   );
 }
