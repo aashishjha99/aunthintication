@@ -5,15 +5,16 @@
   font-family: montserrat, sans-serif;
 }
 form {
-  height: 250px;
+  height: 300px;
   width: 15%;
   display: block;
   margin-top: 15%;
-  margin-left: 45%;
+  margin-left: 40%;
   background-color: powderblue;
 }
 .form-inner {
-  padding: 30px;
+  margin-right: 20px;
+  padding: 25px;
 }
 .email {
   margin-left: 25px;
