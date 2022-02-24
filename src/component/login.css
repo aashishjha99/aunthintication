@@ -1,7 +1,36 @@
-.sizing {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+form {
+  height: 250px;
+  width: 15%;
+  display: block;
+  margin-top: 15%;
+  margin-left: 45%;
+  background-color: powderblue;
+}
+.form-inner {
+  padding: 30px;
+}
+.email {
+  margin-left: 25px;
+}
+.form-group {
   display: flex;
-  align-items: center;
-  width: 10%;
-  margin-top: 10%;
-  margin-left: 40%;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.loginbtn {
+  height: 27px;
+  width: 60px;
+}
+.passproperties {
+  display: block;
+  font-size: smaller;
+  margin-left: 100px;
+  margin-bottom: 10px;
 }
