@@ -29,7 +29,7 @@ function Login({ login, error }) {
             className="email"
             id="email"
             onChange={onmail}
-            value={details.email}
+            value={details.email
           />
         </div>
         <div className="form-group">
